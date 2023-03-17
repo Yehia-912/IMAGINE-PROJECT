@@ -17,7 +17,7 @@ $(function () {
       });
     },
     {
-      threshold: 0.45,
+      threshold: 0.6,
       rootMargin: "150px",
     } 
   );
