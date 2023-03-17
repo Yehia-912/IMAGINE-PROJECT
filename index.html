@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIRST REAL TEMPLATE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-2 py-2" href="#"
+          >imagine<span class="text-primary">.</span></a
+        >
+        <button
+          class="btn text-black bg-transparent canvas-toggler navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center"
+                href="#about"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#ourteam">Our team</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- start offcanvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header justify-content-end pt-5 px-5 ">
+        
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body text-capitalize px-5 pb-5 pt-2">
+        <div class="mt-4">
+          <a href="#home" class="text-decoration-none text-black nav-link nav-link-canvas">home</a>
+        </div>
+        <div class="mt-4">
+          <a href="#features" class="text-decoration-none text-black nav-link nav-link-canvas">Features</a>
+        </div>
+        <div class="mt-4"> 
+          <a
+                class="nav-link dropdown-toggle d-flex align-items-center nav-link-canvas"
+                href="#about"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#ourteam">Our team</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+        </div>
+        <div class="mt-4">
+          <a href="#testimonials" class="text-decoration-none text-black nav-link nav-link-canvas">Testimonials</a>
+        </div>
+        <div class="mt-4">
+          <a href="#blog" class="text-decoration-none text-black nav-link nav-link-canvas">Blog</a>
+        </div>
+        <div class="mt-4">
+          <a href="#contact" class="text-decoration-none text-black nav-link nav-link-canvas">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- end offcanvas -->
+    <div class="landing bg-white" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="fw-bold mb-0">Make Your Business More Profitable</h1>
+            <p class="lh-sm fw-lighter mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam assumenda ea quo cupiditate facere deleniti fuga
+              officia.
+            </p>
+            <button class="btn rounded-pill fs-6 position-relative">
+              Get Started
+            </button>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./assets/undraw_investing_7u74.svg"
+              class="img-fluid"
+              alt="landing-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features pb-5 bg-white" id="features">
+      <div class="container">
+        <div
+          class="animated special-header vertical-animation text-center py-5 pb-3"
+        >
+          <h2 class="fw-bold fs-2">Imagine Features</h2>
+          <p class="lead w-75 m-auto px-md-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos
+            quaerat sapiente nam, id vero.
+          </p>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-1"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-2"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-3"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-1"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-2"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+          <div
+            class="animated feat-parent col-md-6 col-lg-4 text-center fw-normal position-relative vertical-animation vertical-animation-3"
+          >
+            <div class="feat rounded">
+              <h4 class="fs-6 text-capitalize">Marketing Consulting</h4>
+              <p class="fw-lighter fs-6 px-md-3 px-lg-0 px-xl-2 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-decoration-none text-capitalize"
+                >learn more</a
+              >
+              <div
+                class="absolute-circle rounded-circle position-absolute d-flex justify-content-center align-items-center fw-bold text-uppercase text-white"
+              >
+                y
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-with-features bg-white py-5 my-5 overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="image-container col-md-6 animated">
+            <img
+              src="./assets/undraw_gift_card_6ekc.svg"
+              alt="image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-5 offset-1">
+            <div class="mb-4">
+              <h2 class="fw-bold">Communicate and gather feedback</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque nisi architecto autem molestias corrupti
+                officia veniam.
+              </p>
+            </div>
+            <div class="card shadow-sm d-flex animated">
+              <div class="title">
+                <div class="row">
+                  <div class="col-3 mb-4 text-end">
+                    <img
+                      src="./assets/person_4.jpg.png"
+                      class="img-fluid rounded-circle"
+                      alt="person"
+                    />
+                  </div>
+                  <div class="col-9 ps-0">
+                    <h4 class="fw-bold fs-6">Grey Simpson</h4>
+                    <p class="fs-6 text-black">Co-Founder, XYZ Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="decryption p">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus vitae ipsa asperiores inventore aperiam iure?”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-with-features rwf-2 bg-white py-5 mb-5 overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <div class="mb-4">
+              <h2 class="fw-bold">Communicate and gather feedback</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque nisi architecto autem molestias corrupti
+                officia veniam.
+              </p>
+            </div>
+            <div class="card shadow-sm d-flex animated">
+              <div class="title">
+                <div class="row">
+                  <div class="col-3 mb-4 text-end">
+                    <img
+                      src="./assets/RealOne.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="person"
+                    />
+                  </div>
+                  <div class="col-9 ps-0">
+                    <h4 class="fw-bold fs-6">Kimberly Gush</h4>
+                    <p class="fs-6 text-black">Co-Founder, XYZ Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="decryption p">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus vitae ipsa asperiores inventore aperiam iure?”
+              </blockquote>
+            </div>
+          </div>
+          <div class="image-container col-md-7 animated">
+            <img
+              src="./assets/undraw_metrics_gtu7.pmg.svg"
+              alt="image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-with-features bg-white py-5 mb-5 overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="image-container col-md-6 animated">
+            <img
+              src="./assets/undraw_gift_card_6ekc.svg"
+              alt="image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-5 offset-1">
+            <div class="mb-4">
+              <h2 class="fw-bold">Communicate and gather feedback</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque nisi architecto autem molestias corrupti
+                officia veniam.
+              </p>
+            </div>
+            <div class="card shadow-sm d-flex animated">
+              <div class="title">
+                <div class="row">
+                  <div class="col-3 mb-4 text-end">
+                    <img
+                      src="./assets/person_4.jpg.png"
+                      class="img-fluid rounded-circle"
+                      alt="person"
+                    />
+                  </div>
+                  <div class="col-9 ps-0">
+                    <h4 class="fw-bold fs-6">Grey Simpson</h4>
+                    <p class="fs-6 text-black">Co-Founder, XYZ Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="decryption p">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus vitae ipsa asperiores inventore aperiam iure?”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-with-features rwf-2 bg-white py-5 mb-5 overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <div class="mb-4">
+              <h2 class="fw-bold">Communicate and gather feedback</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque nisi architecto autem molestias corrupti
+                officia veniam.
+              </p>
+            </div>
+            <div class="card shadow-sm d-flex animated">
+              <div class="title">
+                <div class="row">
+                  <div class="col-3 mb-4 text-end">
+                    <img
+                      src="./assets/RealOne.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="person"
+                    />
+                  </div>
+                  <div class="col-9 ps-0">
+                    <h4 class="fw-bold fs-6">Kimberly Gush</h4>
+                    <p class="fs-6 text-black">Co-Founder, XYZ Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="decryption p">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus vitae ipsa asperiores inventore aperiam iure?”
+              </blockquote>
+            </div>
+          </div>
+          <div class="image-container col-md-7 animated">
+            <img
+              src="./assets/undraw_metrics_gtu7.pmg.svg"
+              alt="image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="container">
+        <div class="special-header text-center py-5">
+          <h2 class="fw-bold fs-2 pt-5">About Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 to-left animated">
+            <img
+              src="./assets/undraw_bookmarks_r6up.svg"
+              class="img-fluid"
+              alt="image"
+            />
+          </div>
+          <div class="col-md-5 offset-1">
+            <h3 class="fw-bold">Our Mission</h3>
+            <p class="mb-4">
+              Eos cumque optio dolores excepturi rerum temporibus magni
+              recusandae eveniet, totam omnis consectetur maxime quibusdam
+              expedita dolorem dolor nobis dicta labore quaerat esse magnam
+              unde, aperiam delectus! At maiores, itaque.
+            </p>
+            <p class="ps-5 to-after">Laborum enim quasi at modi</p>
+            <p class="ps-5 to-after">Ad at tempore</p>
+            <p class="ps-5 to-after">Labore quaerat esse</p>
+
+            <div class="my-5 pb-5">
+              <button class="btn rounded-pill fs-6 position-relative">
+                learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our-team" id="ourteam">
+      <div class="container">
+        <div
+          class="animated special-header vertical-animation text-center py-5 my-5 pb-3"
+        >
+          <h2 class="fw-bold fs-1">Our Team</h2>
+          <p class="lead w-75 m-auto px-md-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos
+            quaerat sapiente nam, id vero.
+          </p>
+        </div>
+        <div class="row py-5 my-5">
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-1 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img src="./assets/RealOne.jpg" class="img-fluid" alt="image" />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">Cloe Marena</h4>
+            <h6 class="text-uppercase fw-bold">PRESIDENT</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-2 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img
+                src="./assets/person_2.jpg.png"
+                class="img-fluid"
+                alt="image"
+              />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">John Rooster</h4>
+            <h6 class="text-uppercase fw-bold">MARKETING</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-3 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img
+                src="./assets/person_3.jpg.png"
+                class="img-fluid"
+                alt="image"
+              />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">Will Turner</h4>
+            <h6 class="text-uppercase fw-bold">MARKETING</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-1 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img
+                src="./assets/person_4.jpg.png"
+                class="img-fluid"
+                alt="image"
+              />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">Nicolas Stainer</h4>
+            <h6 class="text-uppercase fw-bold">FINANCING</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-2 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img
+                src="./assets/person_5.jpg.png"
+                class="img-fluid"
+                alt="image"
+              />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">George Brook</h4>
+            <h6 class="text-uppercase fw-bold">FOUNDER</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+          <div
+            class="card col-md-6 col-lg-4 border-0 animated vertical-animation vertical-animation-3 mb-5"
+          >
+            <div class="mb-4 overflow-hidden position-relative">
+              <img src="./assets/RealOne2.jpg" class="img-fluid" alt="image" />
+              <div
+                class="like-after position-absolute w-100 text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  href="#"
+                  class="fa-brands fa-facebook-f text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter text-decoration-none text-white"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-instagram text-decoration-none text-white"
+                ></a>
+              </div>
+            </div>
+            <h4 class="fw-normal">Emely Hopson</h4>
+            <h6 class="text-uppercase fw-bold">MARKETING</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi
+              accusantium repellat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials pb-5" id="testimonials">
+      <div class="like-container m-auto position-relative text-center">
+        <div class="special-header text-center">
+          <h2 class="fw-bold fs-2">Testimonials</h2>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <!-- indecators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <!-- content -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="after-carosel-item">
+                <div
+                  class="card border-0 bg-transparent text-center overflow-visible"
+                >
+                  <div class="pb-4">
+                    <img
+                      src="./assets/person_5.jpg.png"
+                      class="img-fluid rounded-circle shadow-lg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <blockquote class="p fs-4">
+                      “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur unde reprehenderit aperiam quaerat fugiat
+                      repudiandae explicabo animi minima fuga beatae illum
+                      eligendi incidunt consequatur. Amet dolores excepturi
+                      earum unde iusto.”
+                    </blockquote>
+                    <p class="fw-bold text-center text-black">Roger Spears</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="after-carosel-item">
+                <div
+                  class="card border-0 bg-transparent text-center overflow-visible"
+                >
+                  <div class="pb-4">
+                    <img
+                      src="./assets/person_2.jpg.png"
+                      class="img-fluid rounded-circle shadow-lg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <blockquote class="p fs-4">
+                      “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur unde reprehenderit aperiam quaerat fugiat
+                      repudiandae explicabo animi minima fuga beatae illum
+                      eligendi incidunt consequatur. Amet dolores excepturi
+                      earum unde iusto.”
+                    </blockquote>
+                    <p class="fw-bold text-center text-black">John Smith</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="after-carosel-item">
+                <div
+                  class="card border-0 bg-transparent text-center overflow-visible"
+                >
+                  <div class="pb-4">
+                    <img
+                      src="./assets/person_3.jpg.png"
+                      class="img-fluid rounded-circle shadow-lg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <blockquote class="p fs-4">
+                      “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur unde reprehenderit aperiam quaerat fugiat
+                      repudiandae explicabo animi minima fuga beatae illum
+                      eligendi incidunt consequatur. Amet dolores excepturi
+                      earum unde iusto.”
+                    </blockquote>
+                    <p class="fw-bold text-center text-black">Kyle McDonald</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="after-carosel-item">
+                <div
+                  class="card border-0 bg-transparent text-center overflow-visible"
+                >
+                  <div class="pb-4">
+                    <img
+                      src="./assets/person_4.jpg.png"
+                      class="img-fluid rounded-circle shadow-lg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <blockquote class="p fs-4">
+                      “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur unde reprehenderit aperiam quaerat fugiat
+                      repudiandae explicabo animi minima fuga beatae illum
+                      eligendi incidunt consequatur. Amet dolores excepturi
+                      earum unde iusto.”
+                    </blockquote>
+                    <p class="fw-bold text-center text-black">Robert Aguilar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog pb-5 mb-5" id="blog">
+      <div class="container">
+        <div class="special-header text-center pt-5">
+          <h2 class="fw-bold fs-2 py-5">Blog Posts</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card border-0">
+              <div>
+                <img
+                  src="./assets/img_1.jpg.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+              <h4>Make Your Business More Profitable</h4>
+              <div class="desc d-flex">
+                <span class="d-inline-block pe-3">Ham Brook </span>
+
+                <span class="d-inline-block pe-3"> Jan 18, 2019 </span>
+
+                <a class="d-inline-block pe-3 text-decoration-none">News</a>
+              </div>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#" class="text-decoration-none">Continue Reading...</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card border-0">
+              <div>
+                <img
+                  src="./assets/img_2.jpg.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+              <h4>Make Your Business More Profitable</h4>
+              <div class="desc d-flex">
+                <span class="d-inline-block pe-3">Ham Brook </span>
+
+                <span class="d-inline-block pe-3"> Jan 18, 2019 </span>
+
+                <a class="d-inline-block pe-3 text-decoration-none">News</a>
+              </div>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#" class="text-decoration-none">Continue Reading...</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card border-0">
+              <div>
+                <img
+                  src="./assets/img_3.jpg.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+              <h4>Make Your Business More Profitable</h4>
+              <div class="desc d-flex">
+                <span class="d-inline-block pe-3">Ham Brook </span>
+
+                <span class="d-inline-block pe-3"> Jan 18, 2019 </span>
+
+                <a class="d-inline-block pe-3 text-decoration-none">News</a>
+              </div>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#" class="text-decoration-none">Continue Reading...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us pt-5 mt-5 overflow-hidden" id="contact">
+      <div class="w-100 mb-5 pb-5">
+        <div class="special-header text-center pt-5">
+          <h2 class="fw-bold fs-2 py-5 text-white">Blog Posts</h2>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <form
+            action=""
+            class="col-10 col-sm-9 col-md-6 py-5 px-5 mb-5 bg-white"
+          >
+            <h4>Contact Form</h4>
+            <div class="row mt-5 mb-3">
+              <div class="col-md-6 mb-3">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" class="w-100" />
+              </div>
+              <div class="col-md-6">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" class="w-100" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="w-100" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="w-100" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="massage">Massage</label>
+                <textarea
+                  name=""
+                  id="massage"
+                  cols="30"
+                  rows="7"
+                  placeholder="Leave your message here..."
+                  class="d-block w-100"
+                ></textarea>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn rounded-pill fs-6 mb-5 mt-2 position-relative"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="social-links d-flex justify-content-center gap-5 flex-wrap">
+          <a href="#" class="fa-brands fa-facebook-f text-decoration-none"></a>
+          <a href="#" class="fa-brands fa-twitter text-decoration-none"></a>
+          <a href="#" class="fa-brands fa-instagram text-decoration-none"></a>
+          <a href="#" class="fa-brands fa-linkedin-in text-decoration-none"></a>
+          <a href="#" class="fa-brands fa-pinterest text-decoration-none"></a>
+        </div>
+        <p class="my-5 text-center">
+          Copyright ©2023 All rights reserved | This template is made with YEHIA
+          by <a href="#" class="text-decoration-none">Colorlib</a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/jquery-3.6.3.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
